@@ -13,7 +13,7 @@ Notion(メモ)→koutag/til(分類)→zenn/qiita/etc(アウトプット)
 * [【React+TypeScript】Netflixのクローンを作るチュートリアル](https://zenn.dev/gunners6518/books/4c4672f32dd100)をやる
 
 ## history
-2021/02/17 - 2021/02/24 vimについて再学習
+vimについて再学習 2021/02/17 - 2021/02/24
 * 読んだ vim help usr_01.txt - usr_032.txt
 * 読んだ [ソートと重複排除を同時に実行する方法は？](https://vim.blue/sort-unique/)
 * 読んだ [vimのinsert modeの全てのキーマップ一覧](https://qiita.com/34ro/items/6163f595785ae99a632a)
