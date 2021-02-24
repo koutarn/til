@@ -1,8 +1,16 @@
 # TIL (Today I Learned)
-できるだけ毎日コミットしてます。
+できるだけ毎日コミットしてます
 
 ## 情報の流れ
 Notion(メモ)→koutag/til(分類)→zenn/qiita/etc(アウトプット)
+
+## Next
+* gitについて再学習(学習方法未定)
+* [javaScript Primer](https://jsprimer.net/)を読んでいく
+* [サバイバルTypeScript](https://book.yyts.org/)を読んでいく
+* [シェルスクリプトで作る Twitter bot 作成入門](https://zenn.dev/mattn/books/bb181f3f4731920f29a5)をやる
+* [A Tour of Go](https://go-tour-jp.appspot.com/list)を読んでいく
+* [【React+TypeScript】Netflixのクローンを作るチュートリアル](https://zenn.dev/gunners6518/books/4c4672f32dd100)をやる
 
 ## history
 2021/02/17 - 2021/02/24 vimについて再学習
