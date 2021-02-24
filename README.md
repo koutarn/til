@@ -4,6 +4,14 @@
 ## 情報の流れ
 Notion(メモ)→koutag/til(分類)→zenn/qiita/etc(アウトプット)
 
+## 方針
+* 学習単位は1週間くらいでいく。
+* コマンドは出来るだけ手打ちする。
+* 面白いものか役に立つものを作る。
+* ミニマルに作る。
+* 学んだことや作ったものは公開する。
+* なるべく新しい技術をちょっとは取り入れる。
+
 ## Next
 * gitについて再学習(学習方法未定)
 * [javaScript Primer](https://jsprimer.net/)を読んでいく
@@ -18,3 +26,4 @@ vimについて再学習 2021/02/17 - 2021/02/24
 * 読んだ [ソートと重複排除を同時に実行する方法は？](https://vim.blue/sort-unique/)
 * 読んだ [vimのinsert modeの全てのキーマップ一覧](https://qiita.com/34ro/items/6163f595785ae99a632a)
 * 参加(ROM専) [vimrc読書会](https://vim-jp.org/reading-vimrc/)
+
