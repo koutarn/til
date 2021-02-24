@@ -9,4 +9,4 @@ Notion(メモ)→koutag/til(分類)→zenn/qiita/etc(アウトプット)
 * 読んだ vim help usr_01.txt - usr_032.txt
 * 読んだ [ソートと重複排除を同時に実行する方法は？](https://vim.blue/sort-unique/)
 * 読んだ [vimのinsert modeの全てのキーマップ一覧](https://qiita.com/34ro/items/6163f595785ae99a632a)
-* 参加(ROM専) vimrc読書会(https://vim-jp.org/reading-vimrc/)
+* 参加(ROM専) [vimrc読書会](https://vim-jp.org/reading-vimrc/)
