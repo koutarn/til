@@ -21,10 +21,3 @@ var 同じ名前の変数を再定義可能。変数の巻き上げがある。
 var name = koutag;
 var name = sayaendou;
 ```
-
-
-
-
-
-
-
