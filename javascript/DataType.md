@@ -5,7 +5,7 @@ javascriptは動的型付けなので変数の型はない
 
 データ型は２つに分けれる
 * プリミティブ型  真偽値や数値などの基本的な型
-( オブジェクト型  プリミティブ型以外のデータ(オブジェクト、配列、関数など)
+* オブジェクト型  プリミティブ型以外のデータ(オブジェクト、配列、関数など)
 
 ### リテラル
 データ型の値を直接記述出来るように構文として定義されたものをリテラルという
@@ -25,7 +25,7 @@ console.log(1);                        // 10進数
 console.log(0b0);                      // 2進数
 console.log(0o7);                      // 8進数
 console.log(0xA);                      // 16進数
-console.log(3.14);                     // 不動小数点リテラル(8byte = doubleと同じ
+console.log(3.14);                     // 不動小数点リテラル(8byte = double)と同じ
 console.log(Number.MAX_SAFE_INTERGER); // 8byte以上を表せるBigInt
 console.log(1n);                       // BigInthhは数値の後ろにnをつける
 ```
@@ -43,6 +43,9 @@ javascriptでは全て平等に文字列として扱う。
 ```javascript
 const name = "koutag";
 console.log(`私の名前は${name}です`);
+
+const proroge = `むかしむかし、あるところに
+                おじいさんとおばあさんがいました`;
 ```
 ``だけは変数を展開できたり、改行も\nがいらなかったりする(テンプレートリテラル)
 
