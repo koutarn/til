@@ -15,7 +15,7 @@ ECMAScriptは毎年アップデートされ、新しい文法や機能が追加�
 ```
 
 ### 実行コンテキスト
-```javascript
+```markdown
 Script defaultのコンテキスト。strict modeは任意で書く必要がある。
 Module ES2015から導入されたやつ。デフォルトでstrict modeになる。
        モジュールの機能は"Module"の実行コンテキストでしか実行出来ない。
