@@ -26,8 +26,8 @@ console.log(0b0);                      // 2進数
 console.log(0o7);                      // 8進数
 console.log(0xA);                      // 16進数
 console.log(3.14);                     // 不動小数点リテラル(8byte = double)と同じ
-console.log(Number.MAX_SAFE_INTERGER); // 8byte以上を表せるBigInt
-console.log(1n);                       // BigInthhは数値の後ろにnをつける
+console.log(Number.MAX_SAFE_INTERGER); // BigInt(8byte以上を表せる)
+console.log(1n);                       // BigIntは数値の後ろにnをつける
 ```
 
 ##### 文字列
