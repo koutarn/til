@@ -104,9 +104,9 @@ console.log(str.length);    // =>3
 
 ### 暗黙的な型変換
 ```javascript
+//このように暗黙的な型変換が起きている
 1 + true;       //2
 
-//このように暗黙的な型変換が起きている
 1 + 1;          //2
 ```
 javascriptでは数値と真偽値の加算のようなパターンでも
@@ -162,6 +162,7 @@ console.log(Number.parseFloat("10.5");    //10.5
 文字列から数値を取り出す関数として
 * Number.parseInt
 * Number.parseFloat
+
 も使える。parseIntの第荷引数は基数を指定する。(10進数として取り出したい場合は10を指定する)
 
 ```javascript
@@ -176,8 +177,8 @@ if (Number.IsNaN(num) === false){
 }
 
 ```
-ただし、文字列が数字とは限らない。
-数字以外が指定されるとNaNを返す。そのため任意の文字から数値に変換した場合は
+ただし、文字列が数値とは限らない。
+数値以外が指定されるとNaNを返す。そのため任意の文字から数値に変換した場合は
 NaNになってしまった場合の処理を書く必要がある。
 
 ### NaNとは
@@ -185,7 +186,7 @@ NaNの性質は以下の通り。
 * Number型と互換性のない性質のデータをNumber型に変換した結果。
 * NaNは何と演算してもNaNになる
 * NaNはNumber型の一種。
-* NaNは自分自信と一致しない。
+* NaNは自分自身と一致しない。
 
 ```javascript
 Number(undefined);          //NaN
@@ -201,7 +202,8 @@ console.log(isNaN(NaN));    //true
 ```
 
 NaNは何と演算してもNaNになるという質の悪い性質があるため
-出来るだけ避けなければならない。そのためNaNを想定して例外を投げる等の処理が必要。
+出来るだけ避けなければならない。
+そのためNaNを想定して例外を投げる等の処理が必要。
 
 ```javascript
 function sum(...values) {
@@ -217,7 +219,7 @@ function sum(...values) {
 
 const x = 1, z = 10;
 let y;  //undefined
-console.log(x,y,z);         //1, undefined,10
+console.log(x,y,z);         //1,undefined,10
 
 //Number型ではないyを渡しているためエラーとなる
 console.log(sum(x,y,z));    //Error
