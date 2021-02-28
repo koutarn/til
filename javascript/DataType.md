@@ -101,3 +101,125 @@ console.log(str.length);    // =>3
 const str = "koutag";
 console.log(str.length);    // =>3
 ```
+
+### 暗黙的な型変換
+```javascript
+1 + true;       //2
+
+//このように暗黙的な型変換が起きている
+1 + 1;          //2
+```
+javascriptでは数値と真偽値の加算のようなパターンでも
+暗黙的な型変換が行われる
+
+暗黙的な型変換とは?
+→ある処理において、その処理過程で行われる明示的ではない型変換のこと。
+
+暗黙的な型変換を避けるためには、
+厳密等価演算子(===)を使い、意図しない比較を行わないことが大切。
+
+### 明示的な型変換
+
+#### 真偽値
+```javascript
+Boolean(1);    // true
+Boolean(0);    // false
+Boolean(null); // false
+```
+Booleanコンストラクタ関数を使うと
+falsyな値を判定して真偽値に変換してくれる
+
+#### 数値→文字列
+```javascript
+String(1);    // "1"
+String(true); // "true"
+String({key:value}) //[object Object]
+```
+真偽値、数値などは見た目通り文字列に変換出来る。
+ただし、オブジェクトに関しては意味のある文字列は返さない。
+配列にはJoinメソッド、オブジェクトにはJSON.stringifyメソッドなど、より適切な方法がある。
+そのためStringコンストラクタ関数での変換はプリミティブ型に対してのみに行うべき。
+
+#### 文字列→数値
+```javascript
+console.log(Number("42"));  //42
+```
+Numberコンストラクタ関数を使うことで文字列から数値に変換出来る。
+
+
+```javascript
+//1を10進数として取り出す
+console.log(Number.parseInt("1",10);    //1
+
+//余分な文字も取り除ける
+console.log(Number.parseInt("42px",10); //42
+console.log(Number.parseInt("10.5",10); //10
+
+//小数点付きとしても取り出せる
+console.log(Number.parseFloat("42.5px");  //42.5
+console.log(Number.parseFloat("10.5");    //10.5
+```
+文字列から数値を取り出す関数として
+* Number.parseInt
+* Number.parseFloat
+も使える。parseIntの第荷引数は基数を指定する。(10進数として取り出したい場合は10を指定する)
+
+```javascript
+Number("文字列だよ〜");          // NaN
+Number.parseInt("文字列だよ〜"); // NaN
+Number.parseFloat("文字列だよ〜"); // NaN
+
+const userInput = "任意の文字列";
+const num = Number.parseInt(userInput,10);
+if (Number.IsNaN(num) === false){
+    console.log(`NaNではない値にパース出来たよ:${num}`);
+}
+
+```
+ただし、文字列が数字とは限らない。
+数字以外が指定されるとNaNを返す。そのため任意の文字から数値に変換した場合は
+NaNになってしまった場合の処理を書く必要がある。
+
+### NaNとは
+NaNの性質は以下の通り。
+* Number型と互換性のない性質のデータをNumber型に変換した結果。
+* NaNは何と演算してもNaNになる
+* NaNはNumber型の一種。
+* NaNは自分自信と一致しない。
+
+```javascript
+Number(undefined);          //NaN
+console.log(10+NaN);        //NaN
+console.log(typeof NaN);    //number
+
+function isNaN(x) {
+    //NaNは自分自身と一致しない。
+    return x !== x;
+}
+
+console.log(isNaN(NaN));    //true
+```
+
+NaNは何と演算してもNaNになるという質の悪い性質があるため
+出来るだけ避けなければならない。そのためNaNを想定して例外を投げる等の処理が必要。
+
+```javascript
+function sum(...values) {
+    return values.reduce((total,value)=> {
+        //値がNumber型ではないため、例外を投げる。
+        if (typeof value !== "number") {
+            throw new Error(`${value}はNumber型ではありません`);
+        }
+
+        return total + Number(value);
+    },0);
+}
+
+const x = 1, z = 10;
+let y;  //undefined
+console.log(x,y,z);         //1, undefined,10
+
+//Number型ではないyを渡しているためエラーとなる
+console.log(sum(x,y,z));    //Error
+```
+
