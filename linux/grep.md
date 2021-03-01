@@ -3,9 +3,9 @@
 grep [flag] [検索文字] [directory]
 ```
 
-### e.g
+### 検索した結果から更に取り除く
 ```bash
-grep -r 'yamada' $HOME/list #-rで再帰的に検索
+grep -r 'foo' ~/aaa | grep -v 'bar'
 ```
 
 
