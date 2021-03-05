@@ -13,6 +13,7 @@ Notion(メモ)→koutag/til(分類)→zenn/qiita/etc(アウトプット)
 * なるべく新しい技術をちょっとは取り入れる。
 
 ## Next
+* vim helpを読んでいく
 * [javaScript Primer](https://jsprimer.net/)を読んでいく
 * [p5.js](ittps://p5js.jp/get-started/) をやってみる
 * gitについて再学習(学習方法未定)
@@ -32,3 +33,5 @@ vimについて再学習 2021/02/17 - 2021/02/24
 * 参加(ROM専) [第451回vimrc読書会](https://vim-jp.org/reading-vimrc/archive/451.html)
 
 [javaScript Primer](https://jsprimer.net/)を読んでいく 2021/02/25 - 2021/03/04
+* 読んだ [jsprimer](https://jsprimer.net/) javaScriptとは - ループと反復処理
+p5.jsを手を動かしてやってみる。2021/03/05 - 2021/03/12

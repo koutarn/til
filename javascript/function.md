@@ -17,7 +17,7 @@ foo('a');   //a
 foo();      //デフォルト値
 
 function bar(args1){
-    return bar ?? "デフォルト値";
+    return args1 ?? "デフォルト値";
 }
 
 ```

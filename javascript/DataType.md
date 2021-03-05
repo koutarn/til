@@ -163,7 +163,7 @@ console.log(Number.parseFloat("10.5");    //10.5
 * Number.parseInt
 * Number.parseFloat
 
-も使える。parseIntの第荷引数は基数を指定する。(10進数として取り出したい場合は10を指定する)
+も使える。parseIntの第2引数は基数を指定する。(10進数として取り出したい場合は10を指定する)
 
 ```javascript
 Number("文字列だよ〜");          // NaN
