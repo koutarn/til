@@ -34,4 +34,5 @@ vimについて再学習 2021/02/17 - 2021/02/24
 
 [javaScript Primer](https://jsprimer.net/)を読んでいく 2021/02/25 - 2021/03/04
 * 読んだ [jsprimer](https://jsprimer.net/) javaScriptとは - ループと反復処理
-p5.jsを手を動かしてやってみる。2021/03/05 - 2021/03/12
+
+[p5.js](ittps://p5js.jp/get-started/)をやってみる。2021/03/05 - 2021/03/12
