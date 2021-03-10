@@ -5,10 +5,10 @@ const object = {
     //キー：値
     "key":"value"
 
-//これでも作成する事が出来る
-//オブジェクトリテラルで作成するほうが楽なのでほとんど使われない。
-const object2 = new Object();
-console.log(object2); // {}
+    //これでも作成する事が出来る
+    //オブジェクトリテラルで作成するほうが楽なのでほとんど使われない。
+    const object2 = new Object();
+    console.log(object2); // {}
 };
 ```
 
@@ -50,6 +50,6 @@ const obj = {}
 obj.key = "value"
 console.log(obj.key);   //value
 ```
-* オブジェクトはmutableの特性を持つ
+* オブジェクトはmutable(可変)の特性を持つ
 * オブジェクトに追加したければ、作成したいプロパティ名に値を代入するだけで良い。
   オブジェクトにプロパティが存在しなければ、勝手に作ってくれる。
