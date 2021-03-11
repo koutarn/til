@@ -15,6 +15,7 @@ const object = {
 オブジェクトとはプロパティの集合
 プロパティとはキーと値が対になったもの。
 * キーには文字列またはSymboleが利用出来る。
+* キーにオブジェクトを指定しても文字列化する際に"[Object Object]"になってしまうため使えない
 * 値には任意のデータを指定出来る。
 * 1つのオブジェクトは複数のプロパティを持てる。
 * オブジェクトはmutable(可変)の特性を持つ
@@ -107,6 +108,86 @@ obj変数への再代入は防げるが、プロパティの変更は防げな�
 プロパティへの再代入を防ぐ場合はObject.freezeを使う。
 strict modeを使用しないと例外が発生しないで無視されるだけなので注意。
 
+### プロパティの存在を確認する
 
+```javascript
+const widget = {
+    window:{
+        title:"ウィジェットのタイトル"
+    }
+};
 
+//この場合は例外は発生しない(存在しないプロパティにアクセスしてもundefinedが返ってくるだけ
+console.log(widget.windw);      //undefined
+
+//undefineにアクセスした形になるのでエラー
+console.log(widget.windw.title) //TypeError
+
+```
+* javascriptでは存在しないオブジェクトにアクセスしてもundefinedが返ってくるだけ
+* undefinedはオブジェクトじゃないからエラーになる
+
+```javascript
+const obj = {
+    key:"value"
+};
+
+//in演算子[H]
+if ("key" in obj) {
+    console.log("keyは存在する")
+}
+
+//hasWonPeopertyメソッド
+if (obj.hasOwnProperty("key")) {
+    console.log("objectはkeyを持っている");
+}
+
+```
+プロパティの存在確認は以下の3つの方法がある。
+* undefinedとの比較 -> プロパティの値がundefinedだった場合と区別が出来ない
+* in演算子 -> 存在すればtrueを返す
+* hasOwnPropertyメソッド -> 存在すればtrueを返す
+
+in演算子とhasOenPropertyは同じ値を返すが、厳密には違う動作をする場合もあるので注意
+
+#### Optional chaining演算子
+
+```javascript
+const obj = {
+    a: {
+        b:"objのaのプロパティのbプロパティ
+    }
+};
+
+//ダメな例
+console.log(obj.a.c);  //undefined
+console.log(obj.d.c);  //type Error
+
+//Optional chaining演算子を使ってみた
+console.log(obj?.a?.b); //objのaのプロパティのbプロパティ(アクセス出来ればそのまま表示)
+console.log(obj?.a?.c);//undefined(ここは普通にアクセス出来ない時と変らない)
+console.log(obj?.d?.c);//undefined(普通にアクセスするとType Errorだけどこれならundefinedが返ってくるだけ)
+
+//ドット記法ではなくブラケット記法でも使える
+console.log(obj?.[a]?.[b]); //objのaのプロパティのbプロパティ
+```
+
+### オブジェクトの静的メソッド
+```javascript
+const obj = {
+    "one":1,
+    "two":2,
+    "three":3
+};
+
+//Object.keysはキーを列挙した配列を返す
+console.log(Object.keys(obj));  // [one,two,three]
+//Object.valuesは値を列挙した配列を返す
+console.log(Object.values(obj));//[1,2,3]
+//Object.entries[キー、値]の配列を返す
+console.log(Object.entries(obj));//[["one",1],["two",2],["three",3]]
+
+```
+オブジェクトの静的メソッドを使う事によって、配列に変換出来るため
+配列のメソッドを使用する事が出来る。また、for of文なども使える。
 

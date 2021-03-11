@@ -67,7 +67,7 @@ javascriptではSybol.iteratorという名前のメソッドを実装した
 一般的に言うforeach構文だと思う。
 forEachに似ているがbreak,continue,returnの制御ができるっぽい。こっちのほうを出来るだけ使う。
 
-### reducaメソッド
+### reduceメソッド
 ```javascript
 function sum(numbers) {
     return.numbers.reduce((total,num)=> {
