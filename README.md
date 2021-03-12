@@ -15,7 +15,6 @@ Notion(メモ)→koutag/til(分類)→zenn/qiita/etc(アウトプット)
 ## Next
 * vim helpを読んでいく
 * [javaScript Primer](https://jsprimer.net/)を読んでいく
-* [p5.js](ittps://p5js.jp/get-started/) をやってみる
 * gitについて再学習(学習方法未定)
 * [サバイバルTypeScript](https://book.yyts.org/)を読んでいく
 * [シェルスクリプトで作る Twitter bot 作成入門](https://zenn.dev/mattn/books/bb181f3f4731920f29a5)をやる
@@ -23,8 +22,6 @@ Notion(メモ)→koutag/til(分類)→zenn/qiita/etc(アウトプット)
 * [【React+TypeScript】Netflixのクローンを作るチュートリアル](https://zenn.dev/gunners6518/books/4c4672f32dd100)をやる
 * [CGのための数学](https://zenn.dev/mebiusbox/books/132b654aa02124) を読んでいく
 * [The Art of Commnd Line](https://github.com/jlevy/the-art-of-command-line/blob/master/README-ja.md) を読む
-
-
 
 ## history
 vimについて再学習 2021/02/17 - 2021/02/24
@@ -38,3 +35,8 @@ vimについて再学習 2021/02/17 - 2021/02/24
 * 読んだ [まんがでわかるLinux シス管系女子](https://system-admin-girl.com/)
 
 [p5.js](ittps://p5js.jp/get-started/) をやってみる。2021/03/05 - 2021/03/12
+* 読んだ [jsprimer](https://jsprimer.net/) オブジェクト
+* 作った [p5js-tutorial](https://github.com/koutarn/p5js-tutorial) jsの勉強に役立てようと思ったけどあまり身が入らなかった。
+* 作った [bumblebee-status-cyberpunk](https://github.com/koutarn/bumblebee-status-cyberpunk)
+
+[The Art of Commnd Line](https://github.com/jlevy/the-art-of-command-line/blob/master/README-ja.md) を読む 2021/3/13 - 2021/3/20
