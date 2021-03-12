@@ -191,3 +191,47 @@ console.log(Object.entries(obj));//[["one",1],["two",2],["three",3]]
 オブジェクトの静的メソッドを使う事によって、配列に変換出来るため
 配列のメソッドを使用する事が出来る。また、for of文なども使える。
 
+### マー ジ
+
+```javascript
+const obj = Object.assign(target,...sources);
+
+const objA = {a:"a"}:
+const objB = {b:"b"}:
+const obj = ({},objA,objB);
+console.log(obj);   //{a:"a",b:"a"};
+```
+targetにsourcesの内容を入れたものを戻り値とする。
+空のオブジェクトをtargetにすることで既存のオブジェクトに影響を与えないでマージ出来る。
+そのため、通常はtargetは空のオブジェクトを指定するのが一般的
+
+```javascript
+const objA = {a:"a"}:
+const objB = {b:"b"}:
+const obj = {
+    ...objA,
+    ...objB
+};
+console.log(obj);   //{a:"a",b:"a"};
+```
+spread構文もマージに利用出来る。
+こちらはオブジェクトリテラルの中でしかspread構文が記述出来ないため、
+必ず新規のオブジェクトを作成する。
+
+
+### 複製
+```javascript
+const objA = {a:"a"};
+const obj = Object.assign({},obj);
+console.log(obj); //{a:"a"}
+```
+javascriptにはオブジェクトを複製する関数は用意されていないが
+新しい空のオブジェクトにコピーをすれば複製しているといえる
+ただし、shallow copyになるので注意。deep copyをしたければ別途関数を組むかライブラリを利用する。
+
+#### Tips
+* shallow copy ... オブジェクトの直下のプロパティしかコピーしない
+* deep copy    ... ネストされたプロパティまでコピー出来る
+
+javascriptのビルトインは浅い実装のみを提供している事が多い。
+
