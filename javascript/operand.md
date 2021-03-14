@@ -91,7 +91,7 @@ if文などでどの値がfalseかどうかは以下のルールで決まる。
 
 falsyな値とは次の7種類の値のことを指す
 * false
-* undefined 
+* undefined
 * null
 * 0
 * 0n
