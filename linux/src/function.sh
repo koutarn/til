@@ -11,5 +11,11 @@ function sum {
   return 0
 }
 
+function minus {
+  declare -i total=$1-$2
+  echo ${total}
+}
+
 sum 1 2
+minus 10 4
 

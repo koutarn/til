@@ -5,9 +5,10 @@ const FizzBuzz = num =>{
 
   if (num % 3 === 0){ret = ret + fizz;}
   if (num % 5 === 0 ){ret = ret + buzz;}
-  return ret;
+  return ret || num;
 }
 
+console.log(FizzBuzz(4));
 console.log(FizzBuzz(3));
 console.log(FizzBuzz(5));
 console.log(FizzBuzz(10));
