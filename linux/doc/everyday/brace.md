@@ -10,7 +10,7 @@ echo {1..10..2}  #1 3 5 7 9
 echo I {am,are} #I am ,I are
 
 #カンマをなにもない場所に指定すると直前の文字をいれる
-#e.g. バックアップファイルの[S]作成
+#e.g. バックアップファイルもついでに作成
 cp somefile{,.bak} # somefile , fomefile.bak
 
 ```
