@@ -1,7 +1,7 @@
 ### 概要
 ```bash
 #ファイルのgoodをbadに置換する
-sec 's/good/bad/g' file.txt
+sed 's/good/bad/g' file.txt
 
 #ファイル名を省略した場合は標準入力からのデータを処理する
 echo 'good morning' | sed 's/good/bad/g' #bad morning

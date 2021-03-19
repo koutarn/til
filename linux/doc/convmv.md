@@ -9,3 +9,4 @@ convmv -f utf-8 -t sjis {filename} --notest
 
 windowに送るファイルをzipにすると、
 日本語が文字化けするのでshift jisに変換してあげる必要がある。
+ファイルの内容の文字コードは [iconv](./iconv.md) を参照
