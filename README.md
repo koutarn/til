@@ -40,4 +40,4 @@ vimについて再学習 2021/02/17 - 2021/02/24
 * 読んだ [sudo vim より sudoedit を使うべき理由](https://w.vmeta.jp/tdiary/20120317.html)
 * 読んだ [bashのヒアドキュメントを活用する](https://qiita.com/take4s5i/items/e207cee4fb04385a9952)
 
-* [javaScript Primer](https://jsprimer.net/)を読んでいく2021/03/21 - 2021/03/28
+[javaScript Primer](https://jsprimer.net/)を読んでいく2021/03/21 - 2021/03/28
