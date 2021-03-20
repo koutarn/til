@@ -18,7 +18,6 @@
 * [A Tour of Go](https://go-tour-jp.appspot.com/list)を読んでいく
 * [【React+TypeScript】Netflixのクローンを作るチュートリアル](https://zenn.dev/gunners6518/books/4c4672f32dd100)をやる
 * [CGのための数学](https://zenn.dev/mebiusbox/books/132b654aa02124) を読んでいく
-* [The Art of Commnd Line](https://github.com/jlevy/the-art-of-command-line/blob/master/README-ja.md) を読む
 
 ## history
 vimについて再学習 2021/02/17 - 2021/02/24
@@ -37,3 +36,8 @@ vimについて再学習 2021/02/17 - 2021/02/24
 * 作った [bumblebee-status-cyberpunk](https://github.com/koutarn/bumblebee-status-cyberpunk)
 
 [The Art of Commnd Line](https://github.com/jlevy/the-art-of-command-line/blob/master/README-ja.md) を読む 2021/3/13 - 2021/3/20
+* 読んだ [The Art of Commnd Line](https://github.com/jlevy/the-art-of-command-line/blob/master/README-ja.md)
+* 読んだ [sudo vim より sudoedit を使うべき理由](https://w.vmeta.jp/tdiary/20120317.html)
+* 読んだ [bashのヒアドキュメントを活用する](https://qiita.com/take4s5i/items/e207cee4fb04385a9952)
+
+* [javaScript Primer](https://jsprimer.net/)を読んでいく2021/03/21 - 2021/03/28
