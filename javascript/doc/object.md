@@ -136,12 +136,22 @@ const obj = {
 
 //in演算子[H]
 if ("key" in obj) {
-    console.log("keyは存在する")
+    console.log("keyは存在する")                    //true
 }
 
 //hasWonPeopertyメソッド
 if (obj.hasOwnProperty("key")) {
-    console.log("objectはkeyを持っている");
+    console.log("objectはkeyを持っている");         //true
+}
+
+//in演算子はオブジェクトが持っていなければ、継承元までさかのぼる。(=インスタンス実装なのかどうかを区別しない)
+if ('toString' in obj) {
+    console.log("objectはtoStringを持っている。");  //true
+}
+
+//hasOwnPropertyはインスタンスメソッドのみで判断する。
+if (obj.hasOwnProperty('toString')){
+    console.log("objectはtoStringを持っている。");  //false
 }
 
 ```
@@ -150,7 +160,7 @@ if (obj.hasOwnProperty("key")) {
 * in演算子 -> 存在すればtrueを返す
 * hasOwnPropertyメソッド -> 存在すればtrueを返す
 
-in演算子とhasOenPropertyは同じ値を返すが、厳密には違う動作をする場合もあるので注意
+in演算子とhasOenPropertyは同じ値を返すが、厳密には違う動作をする。
 
 ### オブジェクトの静的メソッド
 ```javascript
