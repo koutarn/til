@@ -34,6 +34,24 @@ const obje = {
 * javascriptのオブジェクトはmutableの特性を持つため関数で受けとったオブジェクトでも勝手にプロパティの追加が出来る
 * オブジェクトがどんなプロパティを持っているか分かりやすくするために、出来る限り作成後にプロパティは追加しないほうが良い
 
+### constで定義したオブジェクトでも再定義可能
+```javascript
+//これはエラーになる
+const obj = {key:"value"};
+obj = {};           // syntax error
+
+// これはオブジェクトのプロパティの変更なのでエラーにならない
+obj.key = "value2";
+
+// プロパティの変更まで禁止にしたければfreezeを使う
+Object.freeze(obj);
+obj.key = "value2"; // syntax error
+```
+javascriptのconstは値を固定するものではなく、変数への再代入を防ぐためのものなので
+obj変数への再代入は防げるが、プロパティの変更は防げない。
+プロパティへの再代入を防ぐ場合はObject.freezeを使う。
+strict modeを使用しないと例外が発生しないで無視されるだけなので注意。
+
 ### ブラケット記法とドット記法
 ```javascript
 const obj = {
@@ -76,7 +94,8 @@ const obj2 = {
 };
 ```
 computed property namesとはオブジェクトリテラルの中で
-ブラケット記法を使ったプロパティ名の事こうすることで変数のkeyをキーに設定出来る。
+ブラケット記法を使ったプロパティ名の事。
+こうすることで変数のkeyをキーに設定出来る。
 
 ### プロパティの削除
 ```javascript
@@ -90,23 +109,6 @@ console.log(obj);   //{key2:"value2"}
 ```
 オブジェクトのプロパティを削除するにはdelete演算子を使う。
 
-### constで定義したオブジェクトでも再定義可能
-```javascript
-//これはエラーになる
-const obj = {key:"value"};
-obj = {};           // syntax error
-
-// これはオブジェクトのプロパティの変更なのでエラーにならない
-obj.key = "value2";
-
-// プロパティの変更まで禁止にしたければfreezeを使う
-Object.freeze(obj);
-obj.key = "value2"; // syntax error
-```
-javascriptのconstは値を固定するものではなく、変数への再代入を防ぐためのものなので
-obj変数への再代入は防げるが、プロパティの変更は防げない。
-プロパティへの再代入を防ぐ場合はObject.freezeを使う。
-strict modeを使用しないと例外が発生しないで無視されるだけなので注意。
 
 ### プロパティの存在を確認する
 
@@ -150,28 +152,6 @@ if (obj.hasOwnProperty("key")) {
 
 in演算子とhasOenPropertyは同じ値を返すが、厳密には違う動作をする場合もあるので注意
 
-#### Optional chaining演算子
-
-```javascript
-const obj = {
-    a: {
-        b:"objのaのプロパティのbプロパティ
-    }
-};
-
-//ダメな例
-console.log(obj.a.c);  //undefined
-console.log(obj.d.c);  //type Error
-
-//Optional chaining演算子を使ってみた
-console.log(obj?.a?.b); //objのaのプロパティのbプロパティ(アクセス出来ればそのまま表示)
-console.log(obj?.a?.c);//undefined(ここは普通にアクセス出来ない時と変らない)
-console.log(obj?.d?.c);//undefined(普通にアクセスするとType Errorだけどこれならundefinedが返ってくるだけ)
-
-//ドット記法ではなくブラケット記法でも使える
-console.log(obj?.[a]?.[b]); //objのaのプロパティのbプロパティ
-```
-
 ### オブジェクトの静的メソッド
 ```javascript
 const obj = {
@@ -191,7 +171,7 @@ console.log(Object.entries(obj));//[["one",1],["two",2],["three",3]]
 オブジェクトの静的メソッドを使う事によって、配列に変換出来るため
 配列のメソッドを使用する事が出来る。また、for of文なども使える。
 
-### マー ジ
+### マージ
 
 ```javascript
 const obj = Object.assign(target,...sources);
@@ -218,7 +198,6 @@ spread構文もマージに利用出来る。
 こちらはオブジェクトリテラルの中でしかspread構文が記述出来ないため、
 必ず新規のオブジェクトを作成する。
 
-
 ### 複製
 ```javascript
 const objA = {a:"a"};
@@ -227,11 +206,4 @@ console.log(obj); //{a:"a"}
 ```
 javascriptにはオブジェクトを複製する関数は用意されていないが
 新しい空のオブジェクトにコピーをすれば複製しているといえる
-ただし、shallow copyになるので注意。deep copyをしたければ別途関数を組むかライブラリを利用する。
-
-#### Tips
-* shallow copy ... オブジェクトの直下のプロパティしかコピーしない
-* deep copy    ... ネストされたプロパティまでコピー出来る
-
-javascriptのビルトインは浅い実装のみを提供している事が多い。
-
+ただし、[shallow copy](./shallowCopy.md)になるので注意。[deep copy](./deepCopy.md)をしたければ別途関数を組むかライブラリを利用する。

@@ -5,7 +5,7 @@
 ```javascript
 const name = 'yamada' + 'da-yama';
 console.log(name);  //yamadada-yama
-``` 
+```
 文字列の結合は+で出来る。
 
 ### べき乗
@@ -24,7 +24,6 @@ console.log(+"1");  // 1
 NaNは数値ではないがNumber型の値を表現している。
 
 ### 比較演算子
-
 
 #### 厳密等価演算子
 ```javascript
@@ -84,22 +83,6 @@ const key = obj.key;
 左辺のオペランドが配列リテラルやオブジェクトリテラルになる。
 そうすることで複数の変数に同時に代入することが出来る。
 
-### falsy
-if文などでどの値がfalseかどうかは以下のルールで決まる。
-* falsyな値→false
-* falsyでない値→true
-
-falsyな値とは次の7種類の値のことを指す
-* false
-* undefined
-* null
-* 0
-* 0n
-* NaN
-* ""
-
-undefined、0n、NaNは馴染みがないので注意する。
-
 ### Nullish coalescing演算子(??)
 左辺がnullかundefinedだった場合右辺を評価する演算子
 ```javascript
@@ -110,3 +93,24 @@ value = value ?? 100;       //55
 nullかundefinedだった場合値を詰めれる。
 無駄にif文を書かない良い、二度代入する必要がないのでconstが使える。
 
+### Optional chaining演算子
+
+```javascript
+const obj = {
+    a: {
+        b:"objのaのプロパティのbプロパティ
+    }
+};
+
+//ダメな例
+console.log(obj.a.c);  //undefined
+console.log(obj.d.c);  //type Error
+
+//Optional chaining演算子を使ってみた
+console.log(obj?.a?.b); //objのaのプロパティのbプロパティ(アクセス出来ればそのまま表示)
+console.log(obj?.a?.c);//undefined(ここは普通にアクセス出来ない時と変らない)
+console.log(obj?.d?.c);//undefined(普通にアクセスするとType Errorだけどこれならundefinedが返ってくるだけ)
+
+//ドット記法ではなくブラケット記法でも使える
+console.log(obj?.[a]?.[b]); //objのaのプロパティのbプロパティ
+```
