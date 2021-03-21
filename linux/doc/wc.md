@@ -1,4 +1,7 @@
-### 概要
+# wc
+
+## 概要
+
 ```bash
 wc {file name}
 ```

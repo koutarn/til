@@ -1,3 +1,6 @@
+# pacman.md
+
+## 概要
 ```bash
 pacman -Syuu         # update
 pacman -S <appname>  # アプリのインストール

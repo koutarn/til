@@ -1,4 +1,5 @@
-### 概要
+#locate.md
+## 概要
 ```bash
 locate "something"
 ```

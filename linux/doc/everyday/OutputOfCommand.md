@@ -1,4 +1,6 @@
-### 概要
+# OutputOfCommand.md
+## 概要
+
 ```bash
 diff /etc/hosts <(ssh somehost cat /etc/hosts)
 ```

@@ -1,4 +1,5 @@
-### [S]概要
+#lsb_release.md
+## [S]概要
 ```bash
 lsb_release -a
 

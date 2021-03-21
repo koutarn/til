@@ -1,4 +1,4 @@
-### Manjaro Linuxのnvidiaドライバ インストール方法
+# Manjaro Linuxのnvidiaドライバ インストール方法
 ```bash
 sudo mhwd -a pci nonfree 0300
 ```

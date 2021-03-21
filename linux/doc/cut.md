@@ -1,3 +1,5 @@
+#cut.md
+
 ### 区切って任意の場所の文字を取得
 ```bash
 grep 'foo' ~/aaa | cut -d ' ' -f2

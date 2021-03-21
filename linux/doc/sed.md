@@ -1,4 +1,6 @@
-### 概要
+#sed.md
+
+## 概要
 ```bash
 #ファイルのgoodをbadに置換する
 sed 's/good/bad/g' file.txt

@@ -1,4 +1,7 @@
-### 概要
+# updatedb
+
+## 概要
+
 ```bash
 updatedb {option}
 ```
