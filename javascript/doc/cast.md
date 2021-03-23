@@ -23,7 +23,7 @@ Boolean(0);    // false
 Boolean(null); // false
 ```
 Booleanコンストラクタ関数を使うと
-falsyな値を判定して真偽値に変換してくれる
+[falsy](./falsy.md)な値を判定して真偽値に変換してくれる
 
 #### 数値→文字列
 ```javascript
