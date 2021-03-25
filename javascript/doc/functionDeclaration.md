@@ -1,4 +1,6 @@
-### 関数宣言
+function分を用いて関数を宣言する方法を関数宣言と言う。
+変数に関数を値として代入する方法は[関数式](./functionExpression.md)と言う。
+
 ```javascript
 function foo(args1,args2){
     return ret;
