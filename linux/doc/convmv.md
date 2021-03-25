@@ -1,4 +1,4 @@
-#convmv.md
+#convmv
 
 ## 概要
 
@@ -10,6 +10,6 @@ convmv -f utf-8 -t sjis {filename}
 convmv -f utf-8 -t sjis {filename} --notest
 ```
 
-windowに送るファイルをzipにすると、
-日本語が文字化けするのでshift jisに変換してあげる必要がある。
-ファイルの内容の文字コードは [iconv](./iconv.md) を参照
+* windowに送るファイルをzipにすると、日本語が文字化けする
+* shift jisに変換してあげる必要がある。convmvはそれをしてくれる。
+* ファイルの内容の文字コードは [iconv](./iconv.md) を参照

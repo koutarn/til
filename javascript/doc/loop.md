@@ -9,7 +9,7 @@ array.forEach(currentValue=>{
 });
 ```
 配列にはforEachメソッドがあり、反復処理を行える。
-forEachは高階関数であり、[コールバック関数](./callbackFunction.md)には
+forEachは[高階関数](highOrderFunction.md)であり、[コールバック関数](./callbackFunction.md)には
 配列の要素が先頭から順番に渡されて実行される。
 上記の例だと、配列の中身が順に渡されるので2,4,6となる。
 

@@ -1,5 +1,5 @@
-#lsb_release.md
-## [S]概要
+#lsb_release
+## 概要
 ```bash
 lsb_release -a
 
@@ -11,4 +11,4 @@ Release:	20.2.1
 Codename:	Nibia
 
 ```
-ディストロビューションの情報を知る事が出来る。
+* ディストロビューションの情報を知る事が出来る。

@@ -41,7 +41,6 @@ const doubleArray2 = array.map(value => value * 2);
 console.log(doubleArray2);  // [2,4,6]
 
 ```
-上記のようなコールバック関数に無名関数を渡したい場合に、
-Arrow Functionは省略することが出来るので結果的に見やすいコードになる。
-また、Arrow Functionはarguments変数を参照出来ない、thisの問題点を解決出来る等
-利点が多いため、Arrow Functionで問題ない場合はArrow Functionを用いるべき。
+* 上記のようなコールバック関数に無名関数を渡したい場合に、Arrow Functionは省略することが出来るので結果的に見やすいコードになる。
+* Arrow Functionはarguments変数を参照出来ない、thisの問題点を解決出来る等利点が多い。
+* Arrow Functionで問題ない場合はArrow Functionを用いるべき。

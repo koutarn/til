@@ -24,7 +24,9 @@ oneliner.md:```bash
 oneliner.md:grep . *        #各行にファイル名が付く
 oneliner.md:head -100 *     #ファイル毎にヘッダーが付く
 oneliner.md:```
+```
 
+```bash
 head -100 *     #ファイル毎にヘッダーが付く
 ==> sed.md <==
 ## 概要

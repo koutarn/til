@@ -1,4 +1,4 @@
-# OutputOfCommand.md
+# コマンドの出力
 ## 概要
 
 ```bash
