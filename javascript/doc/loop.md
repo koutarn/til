@@ -8,7 +8,7 @@ array.forEach(currentValue=>{
     console.log(currentValue);  //2,4,6
 });
 ```
-配列にはforEachメソッドがあり、反復処理を行える。
+[配列](array.md)にはforEachメソッドがあり、反復処理を行える。
 forEachは[高階関数](highOrderFunction.md)であり、[コールバック関数](./callbackFunction.md)には
 配列の要素が先頭から順番に渡されて実行される。
 上記の例だと、配列の中身が順に渡されるので2,4,6となる。
