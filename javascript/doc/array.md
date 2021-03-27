@@ -5,9 +5,9 @@ const alphabet = ["one","two","three"];
 console.log(alphabet[4]);   //undefined
 
 ```
-* 存在しないindexにアクセスすると例外ではなく`undefine`を返す。(オブジェクトのアクセスと同じ)
-    * C言語とかなら初期化していないと不定な値が返ってくる。
-    * undefine = 未定義なので意味は同じ。
+* 存在しないindexにアクセスすると例外ではなく`undefined`を返す。(オブジェクトのアクセスと同じ)
+    * C言語とかならそもそもアクセス出来ない。
+    * undefined = 未定義なので未定義領域にアクセスしたってことか。
 
 ```javascript
 const alphabet = ["one","two","three"];
@@ -26,6 +26,7 @@ console.log(sparseArray[1]);        //undefined
 ```
 * 配列リテラルで値を省略することで未定義の要素を含める事が出来る。
 	* 普通に未初期化の要素がある配列って認識で良いはず。
+	* C言語だと未初期化は不定な値が入るけどJavascriptだと`undefined`
 * きっちり詰っている配列を密な配列と言う。
 
 ```javascript
@@ -116,6 +117,9 @@ console.log(array.slice(1));    // B C D E
 //空の配列を返す。
 console.log(array.slice(1,1));  // []
 console.log(array.slice(4,1));  // []
+
+//-だと指定位置まで後ろから入る。
+console.log(array.slice(-3));	// C D E
 
 ```
 
