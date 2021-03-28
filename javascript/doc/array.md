@@ -44,6 +44,7 @@ console.log(sparseArray.hasOwnProperty(1)); //false
 ## 配列かどうかの判定
 * `typeof`演算子では配列かどうかは判定出来無い。(オブジェクト扱いになる)
 * `Array.isArray`メソッドを利用すると配列と判定出来る。
+	* [Array-likeオブジェクト](arrayLikeObject.md)はfalseになる。
 
 ## 配列の検索
 
@@ -126,7 +127,7 @@ console.log(array.slice(-3));	// C D E
 ### 配列に含まれているかどうかを取得
 * 指定した要素が配列に含まれているかは`Array#includes`を使う。
     * `Array#indexOf`と同じく、異るオブジェクトの場合は取得出来ないので注意。
-        * その場合は`Array#some`を使う。
+        * その場合は`Array#some`を使う。[loop](loop.md)を参照
 
 ```javascript
 const array = ["Java","Javascript","Ruby"];
@@ -138,6 +139,8 @@ if (array.includes("Javascript")){
 ```
 
 ## 追加と削除
+
+### pushとpop
 ```javascript
 const array = ["Java","Javascript","Ruby"];
 array.push("Go");
@@ -152,8 +155,8 @@ console.log(array);          // Java Javascript Ruby
     * 削除してその要素を取得出来る。
     * ようはpushとpopだね。
 
+### unshiftとshift
 ```javascript
-
 const array = ["Java","Javascript","Ruby"];
 array.unshift("Go");
 console.log(array);              // Go Java javascript Ruby
@@ -167,6 +170,66 @@ console.log(array);              // Java Javascript Ruby
 * 配列の先頭からの削除は`Array#shift`を使う。
     * unsiftは右シフトのイメージ、shiftは左シフトのイメージ
 
+### splice
+```javascript
+const array = ['a','b','c'];
 
+//index 1の要素を一つ削除
+array.splice(1,1)
+console.log(array); //'a','c'
 
+//これですべて消せる
+array.splice(0,array.lengh);
+console.log(array); // []
+```
 
+* 配列の先頭や末尾には[unshiftとshift](#unshiftとshift)や[pushとpop](#pushとpop)などで対応出来るが、任意のインデックスの削除は出来ない。
+* 任意のインデックスの削除には`Array#splice`を使う。
+    * 削除した要素を自動で詰るので疎な配列にならない。
+    * 必要なら抜き出すと同時に要素を追加出来る。
+    * [破壊的なメソッド](../../keyword/destructiveMethod.md)
+
+### lengthプロパティへの代入
+```javascript
+const array = ['a','b'];
+array.length = 0;
+console.log(array); // []
+
+```
+* 配列のすべての要素を削除するのにlengthプロパティへの代入でも行なえる。
+
+### 空配列への代入
+* 空の配列を代入する事で削除出来る。
+    * 元の配列はガベージコレクションによりメモリから開放される。
+
+## 結合
+```javascript
+const array = ['A','B','C'];
+const newArray = array.concat(['D','E']);
+console.log(newArray);             // ['A','B','C','D','E']
+console.log(newArray.concat("F")); // ['A','B','C','D','E','F']
+```
+* `Array#concat`メソッドで結合が出来る。
+* また、`Array#concat`は配列だけではなく、任意の値を要素として結合出来る。
+
+## 展開
+* スプレッド構文を使う事で展開出来る。
+
+## フラット化
+```javascript
+const array = [[["A"],"B"],"C"];
+console.log(array.flat());         // [["A"],"B","C"]
+console.log(array.flat(1));        // [["A"],"B","C"]
+console.log(array.flat(2));        // ["A","B","C"]
+console.log(array.flat(Infinity)); // ["A","B","C"]
+```
+* `Array#flat`メソッドで多次元配列をフラット化出来る。
+    * フラット化=深さを。下げる。
+* [非破壊メソッド](../../keyword/nonDestructiveMethod.md)
+* 引数を指定しない場合一段階下げる。
+* 完全にフラット化する(=一次元配列にする)場合は引数にInfinityを付ける。
+
+## 配列メソッド
+* 配列にはビルドインメソッドが複数ある
+* 大体、[高階関数](highOrderFunction.md)なので[コールバック関数](callbackFunction.md)を渡す。
+* 詳細は[loop](loop.md)を参照
