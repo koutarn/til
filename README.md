@@ -20,24 +20,29 @@
 * [CGのための数学](https://zenn.dev/mebiusbox/books/132b654aa02124) を読んでいく
 
 ## history
-vimについて再学習 2021/02/17 - 2021/02/24
-* 読んだ vim help usr_01.txt - usr_032.txt
-* 読んだ [ソートと重複排除を同時に実行する方法は？](https://vim.blue/sort-unique/)
-* 読んだ [vimのinsert modeの全てのキーマップ一覧](https://qiita.com/34ro/items/6163f595785ae99a632a)
-* 参加(ROM専) [第451回vimrc読書会](https://vim-jp.org/reading-vimrc/archive/451.html)
+* vimについて再学習 2021/02/17 - 2021/02/24
+    * 読んだ vim help usr_01.txt - usr_032.txt
+    * 読んだ [ソートと重複排除を同時に実行する方法は？](https://vim.blue/sort-unique/)
+    * 読んだ [vimのinsert modeの全てのキーマップ一覧](https://qiita.com/34ro/items/6163f595785ae99a632a)
+    * 参加(ROM専) [第451回vimrc読書会](https://vim-jp.org/reading-vimrc/archive/451.html)
 
-[javaScript Primer](https://jsprimer.net/) を読んでいく 2021/02/25 - 2021/03/04
-* 読んだ [jsprimer](https://jsprimer.net/) javaScriptとは - ループと反復処理
-* 読んだ [まんがでわかるLinux シス管系女子](https://system-admin-girl.com/)
+* [javaScript Primer](https://jsprimer.net/) を読んでいく 2021/02/25 - 2021/03/04
+    * 読んだ [jsprimer](https://jsprimer.net/) javaScriptとは - ループと反復処理
+    * 読んだ [まんがでわかるLinux シス管系女子](https://system-admin-girl.com/)
 
-[p5.js](ittps://p5js.jp/get-started/) をやってみる。2021/03/05 - 2021/03/12
-* 読んだ [jsprimer](https://jsprimer.net/) オブジェクト
-* 作った [p5js-tutorial](https://github.com/koutarn/p5js-tutorial) jsの勉強に役立てようと思ったけどあまり身が入らなかった。
-* 作った [bumblebee-status-cyberpunk](https://github.com/koutarn/bumblebee-status-cyberpunk)
+* [p5.js](ittps://p5js.jp/get-started/) をやってみる。2021/03/05 - 2021/03/12
+    * 読んだ [jsprimer](https://jsprimer.net/) オブジェクト
+    * 作った [p5js-tutorial](https://github.com/koutarn/p5js-tutorial) jsの勉強に役立てようと思ったけどあまり身が入らなかった。
+    * 作った [bumblebee-status-cyberpunk](https://github.com/koutarn/bumblebee-status-cyberpunk)
 
-[The Art of Commnd Line](https://github.com/jlevy/the-art-of-command-line/blob/master/README-ja.md) を読む 2021/3/13 - 2021/3/20
-* 読んだ [The Art of Commnd Line](https://github.com/jlevy/the-art-of-command-line/blob/master/README-ja.md)
-* 読んだ [sudo vim より sudoedit を使うべき理由](https://w.vmeta.jp/tdiary/20120317.html)
-* 読んだ [bashのヒアドキュメントを活用する](https://qiita.com/take4s5i/items/e207cee4fb04385a9952)
+* [The Art of Commnd Line](https://github.com/jlevy/the-art-of-command-line/blob/master/README-ja.md) を読む 2021/03/13 - 2021/03/20
+    * 読んだ [The Art of Commnd Line](https://github.com/jlevy/the-art-of-command-line/blob/master/README-ja.md)
+    * 読んだ [sudo vim より sudoedit を使うべき理由](https://w.vmeta.jp/tdiary/20120317.html)
+    * 読んだ [bashのヒアドキュメントを活用する](https://qiita.com/take4s5i/items/e207cee4fb04385a9952)
 
-[javaScript Primer](https://jsprimer.net/)を読んでいく2021/03/21 - 2021/03/28
+* [javaScript Primer](https://jsprimer.net/)を読んでいく2021/03/21 - 2021/03/28
+    * 読んだ [jsprimer](https://jsprimer.net/) プロトタイプオブジェクト - 配列
+    * 読んだ [目的に沿ったDocumentation as Codeをいかにして実現していくか](https://speakerdeck.com/k1low/phperkaigi-2021?slide=49)
+    * 読んだ vim help user_40.txt
+
+* vimについて再学習 2021/03/29 - 2021/04/04
