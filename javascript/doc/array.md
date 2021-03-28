@@ -5,7 +5,7 @@ const alphabet = ["one","two","three"];
 console.log(alphabet[4]);   //undefined
 
 ```
-* 存在しないindexにアクセスすると例外ではなく`undefined`を返す。(オブジェクトのアクセスと同じ)
+* 存在しないindexにアクセスすると例外ではなく[undefined](undefined.md)を返す。(オブジェクトのアクセスと同じ)
     * C言語とかならそもそもアクセス出来ない。
     * undefined = 未定義なので未定義領域にアクセスしたってことか。
 
@@ -15,7 +15,7 @@ console.log(alphabet.length);       // 3
 console.log(alphabet[alphabet.length - 1]); //three
 
 ```
-* `array.length`プロパティは配列の要素の数を返す。indexではないので注意。
+* [array.length](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/length)プロパティは配列の要素の数を返す。indexではないので注意。
 
 ## 疎な配列,密な配列
 ```javascript
@@ -167,7 +167,7 @@ console.log(array);              // Java Javascript Ruby
 
 ```
 * 配列の先頭に追加は`Array#unshift`を使う。
-* 配列の先頭からの削除は`Array#shift`を使う。
+* 配列の先頭からの削除は [Array#shift](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)を使う。
     * unsiftは右シフトのイメージ、shiftは左シフトのイメージ
 
 ### splice
