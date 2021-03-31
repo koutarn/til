@@ -4,18 +4,19 @@ call search("Date:","W")
 let line = getline(".")
 ```
 * 関数は`call`で呼びだす
-    * 関数の結果を代入する場合は[S]不要
+    * 関数の結果を代入する場合は不要
 * 関数の一覧は`h functions`を参照
 * functionでユーザー定義関数を確認出来る。
 
 ```vim
-function {name}({arg1},{arg2},...)
+function {name}({arg1},{arg2},...) abort
     {body}
 endfunction
 ```
 * 関数を定義する構文はこんな感じ。
 * 自作関数は大文字から初める必要がある。
-* 関数を再定義したい場合は`function!`と書く。
+* 同名の関数を再定義したい場合は`function!`と書く。
+* abortは関数内でエラーが発生した時にそこで処理終了をするために必要。とりあえず付ける。
 
 ## 関数の削除
 ```vim
@@ -25,11 +26,11 @@ delfunction Show
 
 ## 関数式
 ```vim
-function! Min()
+function! Min() abort
     hogehoge
 endfunction
 
-function! Max()
+function! Max() abort
     piyopiyo
 endfunction
 
