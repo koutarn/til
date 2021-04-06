@@ -10,7 +10,6 @@
 * なるべく新しい技術をちょっとは取り入れる。
 
 ## Next
-* vim helpを読んでいく
 * [javaScript Primer](https://jsprimer.net/)を読んでいく
 * gitについて再学習(学習方法未定)
 * [サバイバルTypeScript](https://book.yyts.org/)を読んでいく
@@ -46,3 +45,8 @@
     * 読んだ vim help user_40.txt
 
 * vimについて再学習 2021/03/29 - 2021/04/04
+    * 読んだ vim help user_41.txt
+    * 読んだ [Vim scriptでプラグインを作ろう 〜 Vimはいいぞ！ゴリラと学ぶVim講座(8)](https://knowledge.sakura.ad.jp/23436/)
+    * 写経した [Vimスクリプトを書いてみよう](https://www.kaoriya.net/blog/2012/02/19/)
+* [保守性の高いソフトウェア開発のTips集](https://zenn.dev/riku/books/36d9873ee1c0e6) を読んでいく 2021/04/07 - 2021/04/14
+
