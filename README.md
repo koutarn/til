@@ -48,7 +48,11 @@
     * 読んだ vim help user_41.txt
     * 読んだ [Vim scriptでプラグインを作ろう 〜 Vimはいいぞ！ゴリラと学ぶVim講座(8)](https://knowledge.sakura.ad.jp/23436/)
     * 写経した [Vimスクリプトを書いてみよう](https://www.kaoriya.net/blog/2012/02/19/)
+
 * [保守性の高いソフトウェア開発のTips集](https://zenn.dev/riku/books/36d9873ee1c0e6) を読んでいく 2021/04/07 - 2021/04/14
     * 読んだ [保守性の高いソフトウェア開発のTips集](https://zenn.dev/riku/books/36d9873ee1c0e6)
     * 読んだ [読み手に優しいif文を書く](https://qiita.com/Nossa/items/3fb1f1e4c429cacd3365)
     * 読んだ [プリンシプルオブプログラミング](https://www.amazon.co.jp/dp/B071V7MY82/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1)
+
+* [AIZU ONLINE JUDGE - Introduction To Programming](https://judge.u-aizu.ac.jp/onlinejudge/finder.jsp?course=ITP1) を解く
+    * [koutarn/aizuonline](https://github.com/koutarn/aizuonline)
