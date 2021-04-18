@@ -54,5 +54,5 @@
     * 読んだ [読み手に優しいif文を書く](https://qiita.com/Nossa/items/3fb1f1e4c429cacd3365)
     * 読んだ [プリンシプルオブプログラミング](https://www.amazon.co.jp/dp/B071V7MY82/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1)
 
-* [AIZU ONLINE JUDGE - Introduction To Programming](https://judge.u-aizu.ac.jp/onlinejudge/finder.jsp?course=ITP1) を解く
+* [AIZU ONLINE JUDGE - Introduction To Programming](https://judge.u-aizu.ac.jp/onlinejudge/finder.jsp?course=ITP1) を解く 2021/04/15 - 2021/04/22
     * [koutarn/aizuonline](https://github.com/koutarn/aizuonline)
