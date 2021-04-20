@@ -17,6 +17,9 @@
 * [A Tour of Go](https://go-tour-jp.appspot.com/list)を読んでいく
 * [【React+TypeScript】Netflixのクローンを作るチュートリアル](https://zenn.dev/gunners6518/books/4c4672f32dd100)をやる
 * [CGのための数学](https://zenn.dev/mebiusbox/books/132b654aa02124) を読んでいく
+* C++再入門 [江添亮のC++入門](https://ezoeryou.github.io/cpp-intro/)
+* [Linux で C/C++ の足固め](https://www.amazon.co.jp/Linux-%E3%81%AE%E8%B6%B3%E5%9B%BA%E3%82%81-4-18-16-glibc2-7-%E3%80%81%E3%82%A2%E3%83%AD%E3%82%B1%E3%83%BC%E3%82%BF%E3%83%BC%EF%BC%88C-ebook/dp/B07MQZ4M7L) をやる
+
 
 ## history
 * vimについて再学習 2021/02/17 - 2021/02/24
