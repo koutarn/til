@@ -20,7 +20,7 @@
 * C++再入門 [江添亮のC++入門](https://ezoeryou.github.io/cpp-intro/)
 * [Linux で C/C++ の足固め](https://www.amazon.co.jp/Linux-%E3%81%AE%E8%B6%B3%E5%9B%BA%E3%82%81-4-18-16-glibc2-7-%E3%80%81%E3%82%A2%E3%83%AD%E3%82%B1%E3%83%BC%E3%82%BF%E3%83%BC%EF%BC%88C-ebook/dp/B07MQZ4M7L) をやる
 * [低レイヤを知りたい人のためのCコンパイラ作成入門](https://www.sigbus.info/compilerbook)をやる
-
+* [通称「10日くらいでできる！プログラミング言語自作入門」](http://essen.osask.jp/?a21_txt01)
 
 ## history
 * vimについて再学習 2021/02/17 - 2021/02/24
@@ -59,4 +59,7 @@
     * 読んだ [プリンシプルオブプログラミング](https://www.amazon.co.jp/dp/B071V7MY82/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1)
 
 * [AIZU ONLINE JUDGE - Introduction To Programming](https://judge.u-aizu.ac.jp/onlinejudge/finder.jsp?course=ITP1) を解く 2021/04/15 - 2021/04/22
-    * [koutarn/aizuonline](https://github.com/koutarn/aizuonline)
+    * [koutarn/aizuonline](https://github.com/koutarn/aizuonline) hello-world - matrix-multiplicationまでやった。
+    * [レッドコーダーが教える、競プロ・AtCoder上達のガイドライン【初級編：競プロを始めよう】](https://qiita.com/e869120/items/f1c6f98364d1443148b3)を読んだ。
+
+* [javaScript Primer](https://jsprimer.net/) を読んでいく 2021/04/23 - 2021/04/29
