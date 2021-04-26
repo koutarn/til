@@ -65,4 +65,16 @@ console.log(str.includes("いる"));      //true
 * マッチしたかどうかの判定 `String#includes`メソッド等を使う。
 * 先頭にマッチするか、終端でマッチするかは`String#startsWith`と`String#endWith`を使う。
 
+## 文字列の置換/削除
+```javascript
+const str = "aaa";
+const newStr = str.replace("aaa","a");
+console.log(newStr);    //a
+```
+* `String#replace`メソッドで文字列の置換が出来る。
+
+
+
+
+
 
