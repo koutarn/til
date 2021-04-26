@@ -29,8 +29,8 @@ console.log(`Hello ${name}!`); // Hello Javascript!
 ```javascript
 const str = "あ、い、う".sprit("、").join(",");
 ```
-* String#spirtで分割出来る。
-* Array#joinで結合出来る。
+* ``String#spirt``で分割出来る。
+* `Array#join`で結合出来る。
 
 ## 文字列の一部を取得
 ```javascript
@@ -38,8 +38,8 @@ const str = "ABCDE";
 console.log(str.slice(1)); // "BCDE"
 console.log(str.lice(1,5)); // "BCDE"
 ```
-* String#slice、もしくはString#substringで取得出来る。
-* 微妙に挙動が違うけど、基本的にString#sliceを使えばいいと思う。
+* `String#slice`、もしくは`String#substring`で取得出来る。
+* 微妙に挙動が違うけど、基本的に`String#slice`を使えばいいと思う。
 
 ## 文字列の検索
 ```javacript
@@ -48,7 +48,7 @@ const str = "にわにはにわにわとりがいる";
 console.log(str.indexOf("にわ"));       //indexof 先頭から検索
 console.log(str.lastIndexOf("にわ"));   //indexof 末尾から検索
 ```
-* マッチした箇所のindexの取得 String#indexOfメソッドかString#lastIndexOfメソッドを使う。
+* マッチした箇所のindexの取得 `String#indexOf`メソッドか`String#lastIndexOf`メソッドを使う。
 
 ```javascript
 const str = "にわにはにわにわとりがいる";
@@ -62,6 +62,7 @@ console.log(str.includes("にわ"));      //true
 console.log(str.includes("いる"));      //true
 
 ```
-* マッチしたかどうかの判定 String#includesメソッド等を使う。
+* マッチしたかどうかの判定 `String#includes`メソッド等を使う。
+* 先頭にマッチするか、終端でマッチするかは`String#startsWith`と`String#endWith`を使う。
 
 
