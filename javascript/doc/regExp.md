@@ -52,7 +52,7 @@ console.log(results.input);     // undefined
 console.log(results.index);     // undefined
 ```
 * `g`フラグ付きだと全てのマッチ結果がヒットする。
-* `input`と`index`はundedinedになる。
+* `input`と`index`は[undefined](undefined.md)になる。
 
 ```javascript
 const str = "ABC あいう DE えお";
@@ -73,7 +73,7 @@ for(const match of matchesIterator){
 const str = "にわにはにわにわとりがいる";
 console.log(/^にわ/.test(str)); //true
 ```
-* `RegExp#test`メソッドでパターンにマッチするかを調べる事が出来る。。
+* `RegExp#test`メソッドでパターンにマッチするかを調べる事が出来る。
 
 
 
