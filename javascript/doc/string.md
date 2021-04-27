@@ -72,9 +72,3 @@ const newStr = str.replace("aaa","a");
 console.log(newStr);    //a
 ```
 * `String#replace`メソッドで文字列の置換が出来る。
-
-
-
-
-
-
