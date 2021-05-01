@@ -63,3 +63,6 @@
     * [レッドコーダーが教える、競プロ・AtCoder上達のガイドライン【初級編：競プロを始めよう】](https://qiita.com/e869120/items/f1c6f98364d1443148b3)を読んだ。
 
 * [javaScript Primer](https://jsprimer.net/) を読んでいく 2021/04/23 - 2021/04/29
+    * 読んだ [文字列](https://jsprimer.net/basic/string/) - [ラッパーオブジェクト](https://jsprimer.net/basic/wrapper-object/)
+* [低レイヤを知りたい人のためのCコンパイラ作成入門](https://www.sigbus.info/compilerbook)をやる
+    * [koutarn/make-compiler](https://github.com/koutarn/make-compiler)
