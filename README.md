@@ -64,5 +64,5 @@
 
 * [javaScript Primer](https://jsprimer.net/) を読んでいく 2021/04/23 - 2021/04/29
     * 読んだ [文字列](https://jsprimer.net/basic/string/) - [ラッパーオブジェクト](https://jsprimer.net/basic/wrapper-object/)
-* [低レイヤを知りたい人のためのCコンパイラ作成入門](https://www.sigbus.info/compilerbook)をやる
+* [低レイヤを知りたい人のためのCコンパイラ作成入門](https://www.sigbus.info/compilerbook)をやる 5/2 - 5/9
     * [koutarn/make-compiler](https://github.com/koutarn/make-compiler)
