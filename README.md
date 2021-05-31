@@ -67,4 +67,10 @@
 
 * [低レイヤを知りたい人のためのCコンパイラ作成入門](https://www.sigbus.info/compilerbook)をやる 2021/5/2 - 2021/5/9
     * [koutarn/make-compiler](https://github.com/koutarn/make-compiler) step 9の途中までやった。
+
 * [javaScript Primer](https://jsprimer.net/)を読んでいく 2021/5/10 - 2021/5/17
+    * 読んだ [関数とスコープ](https://jsprimer.net/basic/function-scope/)
+
+* vimrcを整備する 2021/5/25 - 2021/6/1
+    * pluginとか色々入れた
+    * vimrc読書会に参加した [第465回vimrc読書会](https://vim-jp.org/reading-vimrc/archive/465.html)
