@@ -71,6 +71,11 @@
 * [javaScript Primer](https://jsprimer.net/)を読んでいく 2021/5/10 - 2021/5/17
     * 読んだ [関数とスコープ](https://jsprimer.net/basic/function-scope/)
 
-* vimrcを整備する 2021/5/25 - 2021/6/1
+* vimrcを整備する 2021/5/25 - 2021/6/13
     * pluginとか色々入れた
     * vimrc読書会に参加した [第465回vimrc読書会](https://vim-jp.org/reading-vimrc/archive/465.html)
+    * vimrc読書会に参加した [第466回vimrc読書会](https://vim-jp.org/reading-vimrc/archive/466.html)
+    * vimrc読書会で読んでもらった [第467回vimrc読書会](https://vim-jp.org/reading-vimrc/archive/467.html)
+
+* gitについて再学習 2021/6/14 - 2021/6/21
+    * GitHub実践入門を読む。
