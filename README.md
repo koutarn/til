@@ -78,4 +78,7 @@
     * vimrc読書会で読んでもらった [第467回vimrc読書会](https://vim-jp.org/reading-vimrc/archive/467.html)
 
 * gitについて再学習 2021/6/14 - 2021/6/21
-    * GitHub実践入門を読む。
+    * GitHub実践入門を読む。 gitについてちょっと理解した。
+
+* vimのpluginを書く
+    * Hello Worldを出すだけのプラグインを書いた。[HelloWorld.vim](https://github.com/koutarn/HelloWorld.vim) 
