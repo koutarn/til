@@ -11,14 +11,12 @@
 
 ## Next
 * [javaScript Primer](https://jsprimer.net/)を読んでいく
-* gitについて再学習(学習方法未定)
+* gitについて再学習
 * [サバイバルTypeScript](https://book.yyts.org/)を読んでいく
 * [シェルスクリプトで作る Twitter bot 作成入門](https://zenn.dev/mattn/books/bb181f3f4731920f29a5)をやる
 * [A Tour of Go](https://go-tour-jp.appspot.com/list)を読んでいく
 * [【React+TypeScript】Netflixのクローンを作るチュートリアル](https://zenn.dev/gunners6518/books/4c4672f32dd100)をやる
 * [CGのための数学](https://zenn.dev/mebiusbox/books/132b654aa02124) を読んでいく
-* C++再入門 [江添亮のC++入門](https://ezoeryou.github.io/cpp-intro/)
-* [Linux で C/C++ の足固め](https://www.amazon.co.jp/Linux-%E3%81%AE%E8%B6%B3%E5%9B%BA%E3%82%81-4-18-16-glibc2-7-%E3%80%81%E3%82%A2%E3%83%AD%E3%82%B1%E3%83%BC%E3%82%BF%E3%83%BC%EF%BC%88C-ebook/dp/B07MQZ4M7L) をやる
 * [低レイヤを知りたい人のためのCコンパイラ作成入門](https://www.sigbus.info/compilerbook)をやる
 * [通称「10日くらいでできる！プログラミング言語自作入門」](http://essen.osask.jp/?a21_txt01)
 
@@ -80,5 +78,9 @@
 * gitについて再学習 2021/6/14 - 2021/6/21
     * GitHub実践入門を読む。 gitについてちょっと理解した。
 
-* vimのpluginを書く
+* vimのpluginを書く 2021/6/22 - 2021/7/5
     * Hello Worldを出すだけのプラグインを書いた。[HelloWorld.vim](https://github.com/koutarn/HelloWorld.vim) 
+    * zennで記事を書いた。 [もしもvimを使っているときに記憶喪失になったら…](https://zenn.dev/kouta/articles/ab2d9df961238e)
+    * vimrc読書会で読んでもらった [第468回vimrc読書会](https://vim-jp.org/reading-vimrc/archive/468.html)
+    * vimrc読書会で読んでもらった [第469回vimrc読書会](https://vim-jp.org/reading-vimrc/archive/469.html)
+
